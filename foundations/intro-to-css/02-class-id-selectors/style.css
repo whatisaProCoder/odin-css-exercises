@@ -4,10 +4,16 @@
 }
 
 #second-element {
-    color: rgb(256, 0, 0);
+    color: rgb(0, 0, 256);
     font-size: 36px;
 }
 
 .cooler-element {
     font-size: 24px;
+}
+
+#fourth-element {
+    background-color: #80e479;
+    font-size: 24px;
+    font-weight: bold;
 }
