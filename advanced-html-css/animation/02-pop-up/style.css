@@ -56,8 +56,29 @@ button {
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+  animation: slide-down forwards ease-in-out 0.3s;
 }
 
 .backdrop.show {
-  opacity: 30%;
+  animation: fade-in forwards ease-in-out 0.3s;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%) translateX(-50%);
+  }
+
+  to {
+    transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 30%;
+  }
 }
